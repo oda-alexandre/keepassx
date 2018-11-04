@@ -1,24 +1,37 @@
-# **<center>Keepassx</center>**
+# KEEPASSX
+
+![keepassx](https://raw.githubusercontent.com/oda-alexandre/keepassx/master/logo-keepassx.png) ![docker](https://raw.githubusercontent.com/oda-alexandre/keepassx/master/logo-docker.png)
 
 
-**INTRODUCTION**
+## INDEX
 
-*keepassx https://keepass.fr/ via docker*
+- [Build Docker](#BUILD)
+- [Introduction](#INTRODUCTION)
+- [Prerequis](#PREREQUIS)
+- [Installation](#INSTALLATION)
+- [License](#LICENSE)
 
 
-**PREREQUIS**
+## INTRODUCTION
 
-*Installer docker*
+Ce repository contient le fichier Dockerfile de [Keepassx](https://keepass.info/index.html) pour [Docker](https://www.docker.com), mis à jour automatiquement dans le [Docker Hub](https://hub.docker.com/r/alexandreoda/keepassx/) public.
 
 
-**INSTALLATION**
+## PREREQUIS
 
-copier/coller dans un terminal :
+Installer [Docker](https://www.docker.com)
 
-    mkdir $HOME/keepassx
 
-    docker run -it --name keepassx --env=QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix/:/tmp/.X11-unix/ -v ${HOME}/keepassx:/home/keepassx -e DISPLAY -v ${XAUTHORITY}:/xauthority:ro -e XAUTHORITY='/xauthority' --network none alexandreoda/keepassx
+## INSTALLATION
 
-**LICENSE**
+```
+mkdir $HOME/keepassx
+```
+```
+docker run -it --name keepassx --env=QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix/:/tmp/.X11-unix/ -v ${HOME}/keepassx:/home/keepassx -e DISPLAY -v ${XAUTHORITY}:/xauthority:ro -e XAUTHORITY='/xauthority' --network none alexandreoda/keepassx
+```
+
+
+## LICENSE
 
 [![GPLv3+](http://gplv3.fsf.org/gplv3-127x51.png)](https://github.com/oda-alexandre/keepassx/blob/master/LICENSE)
