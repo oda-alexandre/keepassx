@@ -25,10 +25,7 @@ Installer [Docker](https://www.docker.com)
 ## INSTALLATION
 
 ```
-mkdir $HOME/keepassx
-```
-```
-docker run -it --name keepassx --env=QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix/:/tmp/.X11-unix/ -v ${HOME}/keepassx:/home/keepassx -e DISPLAY -v ${XAUTHORITY}:/xauthority:ro -e XAUTHORITY='/xauthority' --network none alexandreoda/keepassx
+docker run -it --name keepassx --env=QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix/:/tmp/.X11-unix/ -v ${HOME}:/home/keepassx -e DISPLAY -v ${XAUTHORITY}:/xauthority:ro -e XAUTHORITY='/xauthority' --network none alexandreoda/keepassx
 ```
 
 L'option `--network none` sert à déconnecter le réseau internet afin d'éviter la télémétrie.
