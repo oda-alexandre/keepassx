@@ -12,6 +12,11 @@
 - [License](#LICENSE)
 
 
+## BUILD DOCKER
+
+[![keepassx docker build](https://img.shields.io/docker/build/alexandreoda/keepassx.svg)](https://hub.docker.com/r/alexandreoda/keepassx)
+
+
 ## INTRODUCTION
 
 Ce repository contient le fichier Dockerfile de [Keepassx](https://keepass.info/index.html) pour [Docker](https://www.docker.com), mis à jour automatiquement dans le [Docker Hub](https://hub.docker.com/r/alexandreoda/keepassx/) public.
