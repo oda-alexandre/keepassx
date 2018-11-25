@@ -1,6 +1,6 @@
 # KEEPASSX
 
-![keepassx](https://raw.githubusercontent.com/oda-alexandre/keepassx/master/logo-keepassx.png) ![docker](https://raw.githubusercontent.com/oda-alexandre/keepassx/master/logo-docker.png)
+![keepassx](https://raw.githubusercontent.com/oda-alexandre/keepassx/master/img/logo-keepassx.png) ![docker](https://raw.githubusercontent.com/oda-alexandre/keepassx/master/img/logo-docker.png)
 
 
 ## INDEX
