@@ -14,4 +14,10 @@ adduser keepassx sudo
 
 USER keepassx
 
+RUN sudo apt-get --purge autoremove -y && \
+sudo apt-get autoclean -y && \
+sudo rm /etc/apt/sources.list && \
+sudo rm -rf /var/cache/apt/archives/* && \
+sudo rm -rf /var/lib/apt/lists/*
+
 CMD keepassx
