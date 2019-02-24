@@ -19,12 +19,12 @@
 
 ## INTRODUCTION
 
-Ce repository contient le fichier Dockerfile de [Keepassx](https://keepass.info/index.html) pour [Docker](https://www.docker.com), mis à jour automatiquement dans le [Docker Hub](https://hub.docker.com/r/alexandreoda/keepassx/) public.
+Ce repository contient le fichier Dockerfile de [Keepassx](https://keepass.info/index.html) pour [docker](https://www.docker.com), mis à jour automatiquement dans le [docker hub](https://hub.docker.com/r/alexandreoda/keepassx/) public.
 
 
 ## PREREQUIS
 
-Installer [Docker](https://www.docker.com)
+Installer [docker](https://www.docker.com)
 
 
 ## INSTALLATION
