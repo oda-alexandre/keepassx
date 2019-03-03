@@ -1,19 +1,30 @@
 FROM debian:stretch-slim
 
-MAINTAINER https://oda-alexandre.github.io
+MAINTAINER https://oda-alexandre.com
+
+# VARIABLES
+ENV USER keepassx
+ENV LANG fr_FR.UTF-8
 
 # INSTALLATION DES PREREQUIS
 RUN apt-get update && apt-get install -y --no-install-recommends \
 sudo \
-keepassx
+locales \
+keepassx && \
+
+# SELECTION DE LA LANGUE FRANCAISE
+echo ${LANG} > /etc/locale.gen && locale-gen && \
 
 # AJOUT UTILISATEUR
-RUN useradd -d /home/keepassx -m keepassx && \
-passwd -d keepassx && \
-adduser keepassx sudo
+useradd -d /home/${USER} -m ${USER} && \
+passwd -d ${USER} && \
+adduser ${USER} sudo
 
 # SELECTION UTILISATEUR
-USER keepassx
+USER ${USER}
+
+# SELECTION ESPACE DE TRAVAIL
+WORKDIR /home/${USER}
 
 # NETTOYAGE
 RUN sudo apt-get --purge autoremove -y && \
