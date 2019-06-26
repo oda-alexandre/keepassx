@@ -1,6 +1,6 @@
 # KEEPASSX
 
-[![dockeri.co](https://dockeri.co/image/alexandreoda/keepassx)](https://hub.docker.com/r/alexandreoda/keepassx)
+<img src="https://upload.wikimedia.org/wikipedia/en/9/9a/KeePassX_Logo.png" />
 
 
 ## INDEX
@@ -14,10 +14,7 @@
 
 ## BADGES
 
-[![version](https://images.microbadger.com/badges/version/alexandreoda/keepassx.svg)](https://microbadger.com/images/alexandreoda/keepassx)
-[![size](https://images.microbadger.com/badges/image/alexandreoda/keepassx.svg)](https://microbadger.com/images/alexandreoda/keepassx")
-[![build](https://img.shields.io/docker/build/alexandreoda/keepassx.svg)](https://hub.docker.com/r/alexandreoda/keepassx)
-[![automated](https://img.shields.io/docker/automated/alexandreoda/keepassx.svg)](https://hub.docker.com/r/alexandreoda/keepassx)
+[![pipeline status](https://gitlab.com/oda-alexandre/keepassx/badges/master/pipeline.svg)](https://gitlab.com/oda-alexandre/keepassx/commits/master)
 
 
 ## INTRODUCTION
