@@ -1,6 +1,6 @@
 # KEEPASSX
 
-<img src="https://upload.wikimedia.org/wikipedia/en/9/9a/KeePassX_Logo.png" />
+<img src="https://upload.wikimedia.org/wikipedia/en/9/9a/KeePassX_Logo.png" width="200" height="200"/>
 
 
 ## INDEX
