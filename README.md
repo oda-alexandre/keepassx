@@ -1,6 +1,6 @@
 # KEEPASSX
 
-<img src="https://upload.wikimedia.org/wikipedia/en/9/9a/KeePassX_Logo.png" width="200" height="200"/>
+<img src="https://assets.gitlab-static.net/uploads/-/system/project/avatar/12904457/3bfed3410e1e66951203c5530204198d.media.png" width="200" height="200"/>
 
 ## INDEX
 
