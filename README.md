@@ -1,9 +1,10 @@
 # KEEPASSX
 
-<img src="https://assets.gitlab-static.net/uploads/-/system/project/avatar/12904457/3bfed3410e1e66951203c5530204198d.media.png" width="200" height="200"/>
+![logo](https://assets.gitlab-static.net/uploads/-/system/project/avatar/12904457/3bfed3410e1e66951203c5530204198d.media.png)
 
 ## INDEX
 
+- [KEEPASSX](#keepassx)
   - [INDEX](#index)
   - [BADGES](#badges)
   - [FIRST UPDATE](#first-update)
@@ -16,11 +17,9 @@
 
 [![pipeline status](https://gitlab.com/oda-alexandre/keepassx/badges/master/pipeline.svg)](https://gitlab.com/oda-alexandre/keepassx/commits/master)
 
-
 ## FIRST UPDATE
 
 Date: 01-01-01
-
 
 ## INTRODUCTION
 
