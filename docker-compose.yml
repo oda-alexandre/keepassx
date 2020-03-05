@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  keepassx:
+    container_name: keepassx
+    image: alexandreoda/keepassx
+    restart: no
+    network_mode: none
+    privileged: false
+    environment:
+      - DISPLAY
+      - QT_X11_NO_MITSHM=1
+      - XAUTHORITY='/xauthority'
+    volumes:
+      - "${HOME}:/home/keepassx"
+      - "/tmp/.X11-unix/:/tmp/.X11-unix/"
+      - "${XAUTHORITY}:/xauthority:ro"

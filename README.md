@@ -10,6 +10,8 @@
   - [INTRODUCTION](#introduction)
   - [PREREQUISITES](#prerequisites)
   - [INSTALL](#install)
+    - [DOCKER RUN](#docker-run)
+    - [DOCKER COMPOSE](#docker-compose)
   - [LICENSE](#license)
 
 ## BADGES
@@ -24,7 +26,7 @@ Docker image of :
 
 Continuous integration on :
 
-- [gitlab](https://gitlab.com/oda-alexandre/keepassx/pipelines)
+- [gitlab pipelines](https://gitlab.com/oda-alexandre/keepassx/pipelines)
 
 Automatically updated on :
 
@@ -36,9 +38,32 @@ Use [docker](https://www.docker.com)
 
 ## INSTALL
 
-```docker run -d --name keepassx --env=QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix/:/tmp/.X11-unix/ -v ${HOME}:/home/keepassx -e DISPLAY -v ${XAUTHORITY}:/xauthority:ro -e XAUTHORITY='/xauthority' --network none alexandreoda/keepassx```
+### DOCKER RUN
 
-> L'option `--network none` sert à déconnecter the réseau internet afin d'éviter les attaque MITM and the télémétrie.
+```docker run -d --name keepassx --env=QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix/:/tmp/.X11-unix/ -v ${HOME}:/home/keepassx -e DISPLAY -v ${XAUTHORITY}:/xauthority:ro -e XAUTHORITY='/xauthority' --network none alexandreoda/keepassx
+```
+
+### DOCKER COMPOSE
+
+```yml
+version: "3.7"
+
+services:
+  keepassx:
+    container_name: keepassx
+    image: alexandreoda/keepassx
+    restart: no
+    network_mode: none
+    privileged: false
+    environment:
+      - DISPLAY
+      - QT_X11_NO_MITSHM=1
+      - XAUTHORITY='/xauthority'
+    volumes:
+      - "${HOME}:/home/keepassx"
+      - "/tmp/.X11-unix/:/tmp/.X11-unix/"
+      - "${XAUTHORITY}:/xauthority:ro"
+```
 
 ## LICENSE
 
